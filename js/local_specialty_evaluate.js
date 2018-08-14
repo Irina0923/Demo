@@ -1,0 +1,11 @@
+$(function(){
+	//先获取所有的五角星
+	$(".goods_evalute>ul>li").mouseenter(function(){
+		$(this).text("★").prevAll("li").text("★").end().nextAll("li").text("☆");
+	}).click(function(){
+		$(this).attr("index","1").siblings("li").removeAttr("index");//为五角星设置自定义属性标记
+	}).mouseleave(function(){
+		$(".goods_evalute>ul>li").text("☆");
+		$(".goods_evalute>ul>li[index=1]").text("★").prevAll("li").text("★");
+	});
+});

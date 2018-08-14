@@ -1,0 +1,526 @@
+﻿<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>local_specialty</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/imgtoggle.js"></script>
+<script src="js/common.js"></script>
+</head>
+<script>
+window.onload = function(){
+	var iTgl=new k_iToggle();
+        iTgl.init({
+            boxId:'box',
+            numId:'num',
+            imgId:'imgs',
+            isAuto:true,
+            aCls:'act',
+            iCls:'imgs1',
+            direct:'crt'
+        });
+        chg(iTgl,'chg');
+        _auto(iTgl,'auto_1');
+        
+    //改变方向
+    function chg(o,id){
+        $('#'+id).click(function(){
+            if(o.direct()=='crt'){
+                o.direct('lvl');
+                $(this).text('纵向');
+            }else{
+                o.direct('crt');
+                $(this).text('横向');
+            }
+        });
+    }
+    
+    function _auto(o,id){
+        $('#'+id).click(function(){
+            if(o.isAuto){
+                o.isAuto=false;
+                $(this).text('自动播放已停止');
+            }else{
+                o.isAuto=true;
+                o.auto();
+                $(this).text('自动播放');
+            }
+        });
+    }
+}
+</script>
+<body>
+<div class="top_hw clearfix">
+    <div class="top_h clearfix">
+        <div class="top_hl">
+        	<span>畅游世界，畅游梦想！</span> 
+        	预定热线：<b>000-00000000</b>
+        </div>
+        <div class="top_hr">
+        	<a href="index.html">登录</a>  | 
+        	<a href="regist.html">注册</a>  |  
+        	<a href="#">我的收藏</a>  |  
+        	<a href="#">设为首页</a>
+       	</div>
+    </div>
+</div>
+<div class="head_w">
+    <div class="head_t clearfix">
+        <div class="logo"><img src="images/logo.jpg"></div>
+        <div class="rx_line"><img src="images/rx.jpg"></div>
+    </div>
+</div>
+<div class="mainNav clearfix">
+    <ul class="Nav_ul">
+        <li><a href="home.html">首页</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_line.html">旅游路线</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_scenic.html">旅游景点</a><img src="images/nav_line.jpg"></li>
+        <li><a href="catering_accommodation.html">餐饮住宿</a><img src="images/nav_line.jpg"></li>
+        <li><a href="traffic_line_one.html">交通线路</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_group_purchase.html">旅游团购</a><img src="images/nav_line.jpg"></li>
+        <li><a href="local_specialty.html">地方特产</a><img src="images/nav_line.jpg"></li>
+        <li><a href="auto_brief_introduction.html">生成简介</a><img src="images/nav_line.jpg"></li>
+        <li><a href="team_profile_aboutus.html">团队简介</a><img src="images/nav_line.jpg"></li>
+        <li><a href="navigation.html">行程导航</a></li>
+    </ul>
+</div>
+<div class="b_wrap">
+    <div class="current">
+    	<span>当前所在地：</span>
+    	<a href="home.html">首页</a> >> 
+    	<a href="local_specialty.html">地方特产</a> 
+    </div>
+    <div class="clumn_w clearfix">
+        <div class="clu_zb">
+            <div class="tab_menu mul_w">
+                <ul class="tab_mul">
+                    <li class="selected">全自助游</li>
+                    <li>途经城市设定</li>
+                    <li>入住酒店设定</li>
+                    <li>线路设定</li>
+                    <li>特殊需求线路</li>
+                </ul>
+            </div>
+            <div class="tab_box tw_tab"> 
+                 <div class="tw_tab_input">
+            		<div class="tab_tw">
+            			&nbsp;&nbsp;&nbsp;&nbsp;出发地：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			&nbsp;&nbsp;&nbsp;&nbsp;目的地：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			启程日期：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			返程日期：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			旅游方式：<select>
+	            			<option>自驾游</option>
+	            			<option>跟团游</option>
+	            			<option>定制游</option>
+	            			<option>其他</option>
+            			  </select>
+            		</div>
+            		<div class="tab_btn">
+            			<input type="button" value="确定" />
+            		</div>
+            	</div>
+            	<div class="tw_tab_input">
+            		<div class="tab_tw">
+            			途经城市：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			途径日期：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			离开日期：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			地理位置：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			旅游方式：<select>
+	            			<option>自驾游</option>
+	            			<option>跟团游</option>
+	            			<option>定制游</option>
+	            			<option>其他</option>
+            			  </select>
+            		</div>
+            		<div class="tab_btn">
+            			<input type="button" value="确定" />
+            		</div>
+            	</div>
+            	<div class="tw_tab_input">
+            		<div class="tab_tw">
+            			酒店名称：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			入住日期：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			退房日期：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			酒店位置：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			酒店等级：<select>
+	            			<option>五星</option>
+	            			<option>四星</option>
+	            			<option>三星</option>
+	            			<option>二星</option>
+	            			<option>一星</option>
+	            			<option>其他</option>
+            			  </select>
+            		</div>
+            		<div class="tab_btn">
+            			<input type="button" value="确定" />
+            		</div>
+            	</div>
+            	<div class="tw_tab_input">
+            		<div class="tab_tw">
+            			线路城市：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			出发城市：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			预计时间：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			绑定旅游产品：<input class="tw_radio" type="radio" value=""/>是&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            			<input class="tw_radio" type="radio" value=""/>否
+            		</div>
+            		<div class="tab_tw">
+            			旅游线路：<select>
+	            			<option>自驾游</option>
+	            			<option>跟团游</option>
+	            			<option>定制游</option>
+	            			<option>其他</option>
+            			  </select>
+            		</div>
+            		<div class="tab_btn">
+            			<input type="button" value="确定" />
+            		</div>
+            	</div>
+            	<div class="tw_tab_input">
+            		<div class="tab_tw">
+            			新增线路：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			&nbsp;&nbsp;&nbsp;&nbsp;目的地：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			启程日期：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			返程日期：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_tw">
+            			备注信息：<input type="text" value=""/>
+            		</div>
+            		<div class="tab_btn">
+            			<input type="button" value="确定" />
+            		</div>
+            	</div>
+            </div>
+        </div>
+        <div class="in">
+          <div class="pbox">
+            <div id="box" class="box">
+              <ul id="imgs">
+                <li><a href="#"><img src="images/bimg01.jpg" width="570" height="280"></a></li>
+                <li><a href="#"><img src="images/bimg01.jpg" width="570" height="280"></a></li>
+                <li><a href="#"><img src="images/bimg01.jpg" width="570" height="280"></a></li>
+                <li><a href="#"><img src="images/bimg01.jpg" width="570" height="280"></a></li>
+              </ul>
+            </div>
+            <div class="cons">
+              <ul id="num" class="num">
+                <li class="act"><a href="#">太湖皇冠假日酒店</a></li>
+                <li><a href="#">黄金水岸开业酬宾</a></li>
+                <li><a href="#"> 首尔公寓酒店</a></li>
+                <li style="width:140px"><a href="#"> 新加坡文化酒店</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="clumn_w clearfix">
+        <div class="clumn_l">
+            <div class="clumn">
+                <div class="clumn_tit t01">餐饮住宿</div>
+                <div class="clumn_con">
+                    <div class="cln_w">
+                        <p>华北</p>
+                        <div class="cln_c clearfix">
+                          <li><a href="#">北京特产</a></li>|
+                          <li><a href="#">天津特产</a></li>|
+                          <li><a href="#">河北特产</a></li>|
+                          <li><a href="#">山西特产</a></li>|
+                          <li><a href="#">内蒙古特产</a></li>
+                        </div>
+                    </div>
+                    <div class="cln_w">
+                        <p>西北</p>
+                        <div class="cln_c clearfix">
+                            <li><a href="#">宁夏特产</a></li>|
+                            <li><a href="#">新疆特产</a></li>|
+                            <li><a href="#">青海特产</a></li>|
+                            <li><a href="#">陕西特产</a></li>|
+                            <li><a href="#">甘肃特产</a></li>
+                        </div>
+                    </div>
+                    <div class="cln_w">
+                        <p>西北</p>
+                        <div class="cln_c clearfix">
+                            <li><a href="#">四川特产</a></li>|
+                            <li><a href="#">云南特产</a></li>|
+                            <li><a href="#">贵州特产</a></li>|
+                            <li><a href="#">西藏特产</a></li>|
+                            <li><a href="#">重庆特产</a></li>
+                        </div>
+                    </div>
+                    <div class="cln_w">
+                        <p>华中</p>
+                        <div class="cln_c clearfix">
+                            <li><a href="#">湖北特产</a></li>|
+                            <li><a href="#">湖南特产</a></li>|
+                            <li><a href="#">河南特产</a></li>
+                        </div>
+                    </div>
+                    <div class="cln_w">
+                        <p>华南</p>
+                        <div class="cln_c clearfix">
+                            <li><a href="#">广东特产</a></li>|
+                            <li><a href="#">广西特产</a></li>|
+                            <li><a href="#">海南特产</a></li>
+                        </div>
+                    </div>
+                    <div class="cln_w">
+                        <p>东北</p>
+                        <div class="cln_c clearfix">
+                            <li><a href="#">辽宁特产</a></li>|
+                            <li><a href="#">吉林特产</a></li>|
+                            <li><a href="#">黑龙江特产</a></li>
+                        </div>
+                    </div>
+                    <div class="cln_w">
+                        <p>港澳台</p>
+                        <div class="cln_c clearfix">
+                            <li><a href="#">香港特产</a></li>|
+                            <li><a href="#">澳门特产</a></li>|
+                            <li><a href="#">台湾特产</a></li>
+                        </div>
+                    </div>
+                    <div class="cln_w">
+                        <p>华东</p>
+                        <div class="cln_c clearfix">
+                            <li><a href="#">山东特产</a></li>|
+                            <li><a href="#">江苏特产</a></li>|
+                            <li><a href="#">江西特产</a></li>|
+                            <li><a href="#">安徽特产</a></li>|
+                            <li><a href="#">浙江特产</a></li>|
+                            <li><a href="#">福建特产</a></li>|
+                            <li><a href="#">上海特产</a></li> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clumn_r">
+            <div class="tc_tit">地方特产</div>
+            <div class="tc_wrap clearfix">
+              <dl>
+                <dt><a href="local_specialty_detail.html"><img src="images/tc01.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail.html">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail.html"><img src="images/tc02.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail.html">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail.html"><img src="images/tc03.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail.html">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc04.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc05.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc06.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc07.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc08.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc01.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc02.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc03.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc04.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc05.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc06.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc07.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+              <dl>
+                <dt><a href="local_specialty_detail"><img src="images/tc08.jpg"></a></dt>
+                <dd>
+                  <p class="d01"><a href="local_specialty_detail">【新疆特产】和田枣</a></p>
+                  <p><span>丝路宝典 肉质紧密</span></p>
+                  <p>优惠价：<span>¥58.00</span></p>
+                </dd>
+              </dl>
+            </div>
+        </div>
+    </div>
+</div>
+<!--底部-->
+<div class="friend_w clearfix">
+    <div class="friend clearfix">
+        <dl class="friend_dl bg01">
+            <dt><b>网站使用流程</b></dt>
+            <dd><a href="#">网站使用流程</a></dd>
+            <dd><a href="#">网站预定流程</a></dd>
+            <dd><a href="#">会员注册流程</a></dd> 
+            <dd><a href="#">网站支付流程</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg02">
+            <dt><b>会员中心</b></dt>
+            <dd>会员<a href="regist.html">注册</a>/<a href="index.html">登录</a></dd>
+            <dd><a href="#">帮助中心</a></dd>
+            <dd><a href="#">积分中心</a></dd>
+            <dd><a href="#">支付中心</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg03">
+            <dt><b>企业简介</b></dt>
+            <dd><a href="#">关于我们</a></dd> 
+            <dd><a href="#">加入我们</a></dd> 
+            <dd><a href="#">公司动态</a></dd>
+            <dd><a href="#">网站地图</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg04">
+            <dt><b>合作伙伴</b></dt>
+            <dd><a href="#">加盟合作</a></dd> 
+            <dd><a href="#">广告合作</a></dd> 
+            <dd><a href="#">运营合作</a></dd> 
+            <dd><a href="#">友情链接</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg05">
+            <dt><b>旅游查询</b></dt>
+            <dd><a href="#">天气预报</a></dd>  
+            <dd><a href="#">火车查询</a></dd> 
+            <dd><a href="#">地图导航</a></dd>   
+            <dd><a href="#">航班时刻</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+    </div>
+</div>
+<div class="footer_w">
+    <div class="footer clearfix">
+        <div class="footer_c">
+            <p>地址：xx省xx市xx区xx路xx号 &nbsp;| &nbsp;服务热线：000-00000000 &nbsp; | &nbsp;传真：000-00000000  备案号：000-00000000</p>
+            <p>Copyright © 2018 畅游发展有限公司 All Rights Reserved.</p>
+        </div>
+        <div class="f_logo">
+        	<img src="images/b_logo.jpg">
+        </div>
+    </div>
+</div>
+</body>
+</html>

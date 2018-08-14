@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>会员登录</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+</head>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/index.js"></script>
+<script src="js/common.js"></script>
+<body>
+<div class="top_hw clearfix">
+    <div class="top_h clearfix">
+        <div class="top_hl">
+        	<span>畅游世界，畅游梦想！</span> 
+        	预定热线：<b>000-00000000</b>
+        </div>
+        <div class="top_hr">
+        	<a href="index.html">登录</a>  | 
+        	<a href="regist.html">注册</a>  |  
+        	<a href="#">我的收藏</a>  |  
+        	<a href="#">设为首页</a>
+       	</div>
+    </div>
+</div>
+<div class="head_w">
+    <div class="head_t clearfix">
+        <div class="logo"><img src="images/logo.jpg"></div>
+        <div class="rx_line"><img src="images/rx.jpg"></div>
+    </div>
+</div>
+<div class="mainNav clearfix">
+    <ul class="Nav_ul">
+        <li><a href="home.html">首页</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_line.html">旅游路线</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_scenic.html">旅游景点</a><img src="images/nav_line.jpg"></li>
+        <li><a href="catering_accommodation.html">餐饮住宿</a><img src="images/nav_line.jpg"></li>
+        <li><a href="traffic_line_one.html">交通线路</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_group_purchase.html">旅游团购</a><img src="images/nav_line.jpg"></li>
+        <li><a href="local_specialty.html">地方特产</a><img src="images/nav_line.jpg"></li>
+        <li><a href="auto_brief_introduction.html">生成简介</a><img src="images/nav_line.jpg"></li>
+        <li><a href="team_profile_aboutus.html">团队简介</a><img src="images/nav_line.jpg"></li>
+        <li><a href="navigation.html">行程导航</a></li>
+    </ul>
+</div>
+
+<div class="b_wrap">
+    <div class="current">
+    	<span>当前所在地：</span>
+    	<a href="home.html">首页</a>  >> 
+    	<a href="index.html">会员登录</a>
+    </div>
+    
+    <!--登录窗口-->
+	<div class="login_w clearfix">
+		<div class="login">
+	        <div class="login_t">会员登录☞</div>
+	        <div class="login_con">
+	        	<form action="" method="get" name="">
+	        		<div class="login_username">
+		            	<div class="user_icon"><img src="images/user-icon.png" /></div>
+		            	<div class="user_input"><input type="text" placeholder="用户名/邮箱名" id="username"/></div>
+		            </div>
+		            <div class="login_password">
+		            	<div>
+		            		<div class="psw_icon"><img src="images/psw_icon.png" /></div>
+		            	<div class="psw_input"><input type="text" placeholder="请输入密码" id="password"/></div>
+		            	</div>
+		            	<div>
+		            		<img src="images/closeye.png" alt="" id="eye"/>
+		            	</div>
+		            	</div>
+		            	<div class="login_bs">
+		            		<div><input type="checkbox" value="" id="remember_password"/>记住密码 </div>
+		            		<div><input type="checkbox" value="" id="login_auto"/>自动登录</div>
+		            	</div>
+		            	<div class="login_btn">
+		            		<a class="log_b" href="home.html">
+		            			<input type="button" value="登 录" id="login_btn"/>
+		            		</a>
+		            	</div>
+		            </div>
+	        	</form>
+	            <div class="login_b">
+	                <p>还不是会员？  
+	                	<a class="free_zc" href="#">免费注册</a>
+	                	<a class="back_m" href="#">找回密码</a>
+	                </p>
+	                <p>----------------------------其他方式登录------------------------</p>
+	                	<div class="otherway_login">
+	                		<a class="log_a01" href="#">
+	                		<div class="login_icon">
+	                			<img src="images/sina.png" />	
+	                		</div>
+	                		<div class="icon_txt">
+	                			<span>新浪</span>
+	                		</div>
+	                	</a>
+	                	<a class="log_a02" href="#">
+	                		<div class="login_icon">
+	                			<img src="images/wechat.png" />	
+	                		</div>
+	                		<div class="icon_txt">
+	                			<span>微信</span>
+	                		</div>
+	                	</a> 
+	                	<a class="log_a03" href="#">
+	                		<div class="login_icon">
+	                			<img src="images/icon_QQ.png" />	
+	                		</div>
+	                		<div class="icon_txt">
+	                			<span>QQ</span>
+	                		</div>
+	                	</a>
+	                	<a class="log_a03" href="#">
+	                		<div class="login_icon">
+	                			<img src="images/co_card.png" />	
+	                		</div>
+	                		<div class="icon_txt">
+	                			<span>合作卡</span>
+	                		</div>
+	                	</a>
+	                	</div>
+	            </div>
+	        </div>
+	    </div>
+	</div>    
+	
+</div>
+<!--底部-->
+<div class="friend_w clearfix">
+    <div class="friend clearfix">
+        <dl class="friend_dl bg01">
+            <dt><b>网站使用流程</b></dt>
+            <dd><a href="#">网站使用流程</a></dd>
+            <dd><a href="#">网站预定流程</a></dd>
+            <dd><a href="#">会员注册流程</a></dd> 
+            <dd><a href="#">网站支付流程</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg02">
+            <dt><b>会员中心</b></dt>
+            <dd>会员<a href="regist.html">注册</a>/<a href="index.html">登录</a></dd>
+            <dd><a href="#">帮助中心</a></dd>
+            <dd><a href="#">积分中心</a></dd>
+            <dd><a href="#">支付中心</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg03">
+            <dt><b>企业简介</b></dt>
+            <dd><a href="#">关于我们</a></dd> 
+            <dd><a href="#">加入我们</a></dd> 
+            <dd><a href="#">公司动态</a></dd>
+            <dd><a href="#">网站地图</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg04">
+            <dt><b>合作伙伴</b></dt>
+            <dd><a href="#">加盟合作</a></dd> 
+            <dd><a href="#">广告合作</a></dd> 
+            <dd><a href="#">运营合作</a></dd> 
+            <dd><a href="#">友情链接</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg05">
+            <dt><b>旅游查询</b></dt>
+            <dd><a href="#">天气预报</a></dd>  
+            <dd><a href="#">火车查询</a></dd> 
+            <dd><a href="#">地图导航</a></dd>   
+            <dd><a href="#">航班时刻</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+    </div>
+</div>
+<div class="footer_w">
+    <div class="footer clearfix">
+        <div class="footer_c">
+            <p>地址：xx省xx市xx区xx路xx号 &nbsp;| &nbsp;服务热线：000-00000000 &nbsp; | &nbsp;传真：000-00000000  备案号：000-00000000</p>
+            <p>Copyright © 2018 畅游发展有限公司 All Rights Reserved.</p>
+        </div>
+        <div class="f_logo">
+        	<img src="images/b_logo.jpg">
+        </div>
+    </div>
+</div>
+</body>
+</html>

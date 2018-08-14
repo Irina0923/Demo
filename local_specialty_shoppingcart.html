@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>local_specaliy_shoppingcart</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+</head>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/common.js"></script>
+<body>
+<div class="top_hw clearfix">
+    <div class="top_h clearfix">
+        <div class="top_hl">
+        	<span>畅游世界，畅游梦想！</span> 
+        	预定热线：<b>000-00000000</b>
+        </div>
+        <div class="top_hr">
+        	<a href="index.html">登录</a>  | 
+        	<a href="regist.html">注册</a>  |  
+        	<a href="#">我的收藏</a>  |  
+        	<a href="#">设为首页</a>
+       	</div>
+    </div>
+</div>
+<div class="head_w">
+    <div class="head_t clearfix">
+        <div class="logo"><img src="images/logo.jpg"></div>
+        <div class="rx_line"><img src="images/rx.jpg"></div>
+    </div>
+</div>
+<div class="mainNav clearfix">
+    <ul class="Nav_ul">
+        <li><a href="home.html">首页</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_line.html">旅游路线</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_scenic.html">旅游景点</a><img src="images/nav_line.jpg"></li>
+        <li><a href="catering_accommodation.html">餐饮住宿</a><img src="images/nav_line.jpg"></li>
+        <li><a href="traffic_line_one.html">交通线路</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_group_purchase.html">旅游团购</a><img src="images/nav_line.jpg"></li>
+        <li><a href="local_specialty.html">地方特产</a><img src="images/nav_line.jpg"></li>
+        <li><a href="auto_brief_introduction.html">生成简介</a><img src="images/nav_line.jpg"></li>
+        <li><a href="team_profile_aboutus.html">团队简介</a><img src="images/nav_line.jpg"></li>
+        <li><a href="navigation.html">行程导航</a></li>
+    </ul>
+</div>
+<div class="b_wrap">
+    <div class="current">
+    	<span>当前所在地：</span>
+    	<a href="home.html">首页</a> >> 
+    	<a href="local_specialty.html">地方特产</a> >> 
+    	<a href="local_specialty_shoppingcart.html">购物车</a>
+    </div>
+    <div class="sp_lc"><center><img src="images/sp_lc.jpg"></center></div>
+    <div class="sp_time now_time"></div>
+    <div class="sp_cart clearfix">
+        <div class="sp_state">
+        	<p>购物车状态： </p>
+				<div class="barline" id="probar">
+					<div id="percent"></div>
+					<div id="line"></div>				
+				</div>
+        </div> 
+        <div class="sp_ex">
+        	已选商品<b><span class="piece_num">0</span></b>件&nbsp;&nbsp;
+        	商品总价(不含运费)：<b><span class="total_text"> ￥0 </span></b> 
+        	<a href="local_specialty_purchase_goods.html">结算</a>
+        </div>
+    </div>
+    <div class="com_goods clearfix">
+    	<div class="goods_info">
+    		<div class="th_item"><input type="checkbox" id="all_choose"/>全选</div>
+    		<div class="th_info_title">商品信息</div>
+    		<div class="th_item">数量</div>
+    		<div class="th_item">单价（元）</div>
+    		<div class="th_item">金额（元）</div>
+    		<div class="th_item">操作</div>
+    	</div>
+    	<div class="detail_goods">
+    		<div class="tb_content"><input type="checkbox" name="choose_one" class="choose_one"/></div>
+    		<div class="th_goods_info">
+    			<div class="goods_img"><img src="images/goods1.jpg" /></div>
+    			<div class="info_intro">中秋节礼品 大山合百菇园秋月款A菌菇礼盒干货大礼包土特产送礼</div>
+    		</div>
+    		<div class="tb_content">
+    			<div class="tb_amount">
+    				<p class="amount_minus">-</p>
+    				<input class="txt_amount" type="text" value="1" id="txt_amount"/>
+    				<p class="amount_plus">+</p>
+    			</div>
+    		</div>
+    		<div class="tb_content price">¥45</div>
+    		<div class="tb_content sum_price subtotal">¥45</div>
+    		<div class="tb_content">
+    			<div class="move_bag">	
+    				<a title="删除" href="javascript:void(0)">移入收藏夹</a>
+    			</div>
+    			<div class="del_goods">
+    				<a title="删除" href="javascript:void(0)" class="delBtn">删除</a>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="detail_goods">
+    		<div class="tb_content"><input type="checkbox" name="choose_one" class="choose_one" /></div>
+    		<div class="th_goods_info">
+    			<div class="goods_img"><img src="images/goods2.jpg" /></div>
+    			<div class="info_intro">中秋节礼品 大山合百菇园秋月款A菌菇礼盒干货大礼包土特产送礼</div>
+    		</div>
+    		<div class="tb_content">
+    			<div class="tb_amount">
+    				<p class="amount_minus">-</p>
+    				<input class="txt_amount" type="text" value="1" id="txt_amount"/>
+    				<p class="amount_plus">+</p>
+    			</div>
+    		</div>
+    		<div class="tb_content price">¥33</div>
+    		<div class="tb_content sum_price subtotal">¥33</div>
+    		<div class="tb_content">
+    			<div class="move_bag">	
+    				<a title="删除" href="javascript:void(0)">移入收藏夹</a>
+    			</div>
+    			<div class="del_goods">
+    				<a title="删除" href="javascript:void(0)" class="delBtn">删除</a>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="detail_goods">
+    		<div class="tb_content"><input type="checkbox" name="choose_one" class="choose_one" /></div>
+    		<div class="th_goods_info">
+    			<div class="goods_img"><img src="images/goods3.jpg" /></div>
+    			<div class="info_intro">中秋节礼品 大山合百菇园秋月款A菌菇礼盒干货大礼包土特产送礼</div>
+    		</div>
+    		<div class="tb_content">
+    			<div class="tb_amount">
+    				<p class="amount_minus">-</p>
+    				<input class="txt_amount" type="text" value="1" id="txt_amount"/>
+    				<p class="amount_plus">+</p>
+    			</div>
+    		</div>
+    		<div class="tb_content price">¥78</div>
+    		<div class="tb_content sum_price subtotal">¥78</div>
+    		<div class="tb_content">
+    			<div class="move_bag">	
+    				<a title="删除" href="javascript:void(0)">移入收藏夹</a>
+    			</div>
+    			<div class="del_goods">
+    				<a title="删除" href="javascript:void(0)" class="delBtn">删除</a>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="detail_goods">
+    		<div class="tb_content"><input type="checkbox" name="choose_one" class="choose_one" /></div>
+    		<div class="th_goods_info">
+    			<div class="goods_img"><img src="images/goods4.jpg" /></div>
+    			<div class="info_intro">中秋节礼品 大山合百菇园秋月款A菌菇礼盒干货大礼包土特产送礼</div>
+    		</div>
+    		<div class="tb_content">
+    			<div class="tb_amount">
+    				<p class="amount_minus">-</p>
+    				<input class="txt_amount" type="text" value="1" id="txt_amount"/>
+    				<p class="amount_plus">+</p>
+    			</div>
+    		</div>
+    		<div class="tb_content price">¥69</div>
+    		<div class="tb_content sum_price subtotal">¥69</div>
+    		<div class="tb_content">
+    			<div class="move_bag">	
+    				<a title="删除" href="javascript:void(0)">移入收藏夹</a>
+    			</div>
+    			<div class="del_goods">
+    				<a title="删除" href="javascript:void(0)" class="delBtn">删除</a>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="detail_goods">
+    		<div class="tb_content"><input type="checkbox" name="choose_one" class="choose_one" /></div>
+    		<div class="th_goods_info">
+    			<div class="goods_img"><img src="images/goods5.jpg" /></div>
+    			<div class="info_intro">中秋节礼品 大山合百菇园秋月款A菌菇礼盒干货大礼包土特产送礼</div>
+    		</div>
+    		<div class="tb_content">
+    			<div class="tb_amount">
+    				<p class="amount_minus">-</p>
+    				<input class="txt_amount" type="text" value="1" id="txt_amount"/>
+    				<p class="amount_plus">+</p>
+    			</div>
+    		</div>
+    		<div class="tb_content price">¥100</div>
+    		<div class="tb_content sum_price subtotal">¥100</div>
+    		<div class="tb_content">
+    			<div class="move_bag">	
+    				<a title="删除" href="javascript:void(0)">移入收藏夹</a>
+    			</div>
+    			<div class="del_goods">
+    				<a title="删除" href="javascript:void(0)" class="delBtn">删除</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+</div>
+<!--底部-->
+<div class="friend_w clearfix">
+    <div class="friend clearfix">
+        <dl class="friend_dl bg01">
+            <dt><b>网站使用流程</b></dt>
+            <dd><a href="#">网站使用流程</a></dd>
+            <dd><a href="#">网站预定流程</a></dd>
+            <dd><a href="#">会员注册流程</a></dd> 
+            <dd><a href="#">网站支付流程</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg02">
+            <dt><b>会员中心</b></dt>
+            <dd>会员<a href="regist.html">注册</a>/<a href="index.html">登录</a></dd>
+            <dd><a href="#">帮助中心</a></dd>
+            <dd><a href="#">积分中心</a></dd>
+            <dd><a href="#">支付中心</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg03">
+            <dt><b>企业简介</b></dt>
+            <dd><a href="#">关于我们</a></dd> 
+            <dd><a href="#">加入我们</a></dd> 
+            <dd><a href="#">公司动态</a></dd>
+            <dd><a href="#">网站地图</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg04">
+            <dt><b>合作伙伴</b></dt>
+            <dd><a href="#">加盟合作</a></dd> 
+            <dd><a href="#">广告合作</a></dd> 
+            <dd><a href="#">运营合作</a></dd> 
+            <dd><a href="#">友情链接</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg05">
+            <dt><b>旅游查询</b></dt>
+            <dd><a href="#">天气预报</a></dd>  
+            <dd><a href="#">火车查询</a></dd> 
+            <dd><a href="#">地图导航</a></dd>   
+            <dd><a href="#">航班时刻</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+    </div>
+</div>
+<div class="footer_w">
+    <div class="footer clearfix">
+        <div class="footer_c">
+            <p>地址：xx省xx市xx区xx路xx号 &nbsp;| &nbsp;服务热线：000-00000000 &nbsp; | &nbsp;传真：000-00000000  备案号：000-00000000</p>
+            <p>Copyright © 2018 畅游发展有限公司 All Rights Reserved.</p>
+        </div>
+        <div class="f_logo">
+        	<img src="images/b_logo.jpg">
+        </div>
+    </div>
+</div>
+<section class="model_bg"></section>
+    <section class="my_model">
+    	<div class="qr_del">
+    		<div class="qr_del_first"><p>您确认要删除该商品吗?</p></div>
+    		<div class="qr_del_last"><img src="images/cry.png" /></div>
+    	</div>
+        <div class="sure_del_close">
+        	<input type="button" value="确定" class="del_sure_btn" id="del_sure_btn"/>
+        	<input type="button" value="留下" class="del_close_btn" id="del_close_btn"/>
+        </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>purchase_goods</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+</head>
+<script src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/common.js" ></script>
+<script src="js/local_specialty_purchase_goods.js"></script>
+<body>
+<div class="top_hw clearfix">
+    <div class="top_h clearfix">
+        <div class="top_hl">
+        	<span>畅游世界，畅游梦想！</span> 
+        	预定热线：<b>000-00000000</b>
+        </div>
+        <div class="top_hr">
+        	<a href="index.html">登录</a>  | 
+        	<a href="regist.html">注册</a>  |  
+        	<a href="#">我的收藏</a>  |  
+        	<a href="#">设为首页</a>
+       	</div>
+    </div>
+</div>
+<div class="head_w">
+    <div class="head_t clearfix">
+        <div class="logo"><img src="images/logo.jpg"></div>
+        <div class="rx_line"><img src="images/rx.jpg"></div>
+    </div>
+</div>
+<div class="mainNav clearfix">
+    <ul class="Nav_ul">
+        <li><a href="home.html">首页</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_line.html">旅游路线</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_scenic.html">旅游景点</a><img src="images/nav_line.jpg"></li>
+        <li><a href="catering_accommodation.html">餐饮住宿</a><img src="images/nav_line.jpg"></li>
+        <li><a href="traffic_line_one.html">交通线路</a><img src="images/nav_line.jpg"></li>
+        <li><a href="travel_group_purchase.html">旅游团购</a><img src="images/nav_line.jpg"></li>
+        <li><a href="local_specialty.html">地方特产</a><img src="images/nav_line.jpg"></li>
+        <li><a href="auto_brief_introduction.html">生成简介</a><img src="images/nav_line.jpg"></li>
+        <li><a href="team_profile_aboutus.html">团队简介</a><img src="images/nav_line.jpg"></li>
+        <li><a href="navigation.html">行程导航</a></li>
+    </ul>
+</div>
+<div class="b_wrap">
+    <div class="current">
+    	<span>当前所在地：</span>
+    	<a href="home.html">首页</a> >> 
+    	<a href="local_specialty.html">地方特产</a> >> 
+    	<a href="local_specialty_detail.html">拍下商品</a></div>
+    <div class="sp_lc"><center><img src="images/sp_lc02.jpg"></center></div>
+    <div class="sp_time now_time"></div>
+    <div class="sp_address clearfix">
+        <div class="add_tit clearfix"><b>确认收货地址</b></div>
+        <div class="add_con">
+            <div class="add_clu clearfix">
+                <div class="sp_js">寄送至</div> <div class="sp_dz">
+                <span id="default_addr">湖北省 XX市 XX区XX路XX号XX座XXXX (XXX 收) 12345678901</span> </div>
+                <div class="mx_add">
+                	<span class="alter">管理收货地址 ☟</span>
+                </div>
+            </div>
+            <div class="edit_addr">
+                <div class="has_addr">
+                	<div class="p_radio">
+	                	<table class="p_table" id="p_table">
+	                		<tr>
+	                			<td><form><input type="radio" checked="checked" /></form></td>
+	                			<td><span>
+		                				<span class="span1">湖北省</span> 
+		                				<span class="span2">武汉市</span> 
+		                				<span class="span3">XX区</span>
+		                				<span class="span4">XX路XX号XX座XXXX</span> 
+		                				(<span class="span5">XXX</span> 收) 
+		                				<span class="span6">12345678901</span>
+		                			</span>
+	                			</td>
+	                			<td><span class="mod_addr">编辑</span></td>
+	                			<td><span class="del_addr">删除</span></td>
+	                			<td><span class="set_def def_addr">默认地址</span></td>
+	                		</tr>
+	                		<tr>
+	                			<td><input type="radio" /></td>
+	                			<td><span>
+		                				<span class="span1">河南省</span> 
+		                				<span class="span2">郑州市</span> 
+		                				<span class="span3">XX区</span>
+		                				<span class="span4">XX路XX号XX座XXXX</span> 
+		                				(<span class="span5">XXX</span> 收) 
+		                				<span class="span6">13856454677</span>
+		                			</span></td>
+	                			<td><span class="mod_addr">编辑</span></td>
+	                			<td><span class="del_addr">删除</span></td>
+	                			<td><span class="set_def">设为默认</span></td>
+	                		</tr>
+	                		<tr>
+	                			<td><form><input type="radio" /></form></td>
+	                			<td><span>
+		                				<span class="span1">湖南省</span> 
+		                				<span class="span2">长沙市</span> 
+		                				<span class="span3">XX区</span>
+		                				<span class="span4">XX路XX号XX座XXXX</span> 
+		                				(<span class="span5">XXX</span> 收) 
+		                				<span class="span6">13987654321</span>
+		                			</span></td>
+	                			<td><span class="mod_addr">编辑</span></td>
+	                			<td><span class="del_addr">删除</span></td>
+	                			<td><span class="set_def">设为默认</span></td>
+	                		</tr>
+	                	</table>
+                	</div>
+                </div>
+                <div class="add_addr">
+                	<div class="address_show">
+                		<div class="city">
+                		*省: <select class="province">
+		                		<option>江西省</option>
+		                		<option>湖北省</option>
+		                		<option>湖南省</option>
+		                		<option>江苏省</option>
+	                		</select>
+	                	*市: <select class="p_city">
+		                		<option>南昌市</option>
+		                		<option>湖北省</option>
+		                		<option>湖南省</option>
+		                		<option>江苏省</option>
+		                	</select>
+	                	*区: <select class="p_area">
+		                		<option>南昌市</option>
+		                		<option>湖北省</option>
+		                		<option>湖南省</option>
+		                		<option>江苏省</option>
+		                	</select>
+	                	</div>
+	                	<div class="detail_addr">
+	                		<p>*详细地址:</p>
+	                		<form><textarea></textarea></form>
+	                	</div>
+	                	<div class="addr_people">
+	                		<p>&nbsp;&nbsp;&nbsp;*收货人:</p>
+	                		<form><input type="text" value="" /></form>
+	                	</div>
+	                	<div class="addr_phone">
+	                		<p>*手机号码:</p>
+	                		<form><input type="text" value="" /></form>
+	                	</div>
+	                	<div class="new_btn" id="qr_new_btn">
+	                		<form><input type="button" value="新增收货地址" id="addr_id"/></form>
+	                	</div>
+	                </div>
+	                <div>
+                		<div class="city">
+                			<form id="mode_form">
+	                		*省: <select class="province">
+			                		<option id="first_province">江西省</option>
+			                		<option>湖北省</option>
+			                		<option>湖南省</option>
+			                		<option>江苏省</option>
+			                	</select>
+		                	*市: <select class="p_city">
+			                		<option id="first_city">南昌市</option>
+			                		<option>湖北省</option>
+			                		<option>湖南省</option>
+			                		<option>江苏省</option>
+			                	</select>
+		                	*区: <select class="p_area">
+			                		<option id="first_area">南昌市</option>
+			                		<option>湖北省</option>
+			                		<option>湖南省</option>
+			                		<option>江苏省</option>
+			                	</select>
+			                </form>
+	                	</div>
+	                	<div class="detail_addr" id="first_detail_addr">
+	                		<p>*详细地址:</p>
+	                		<form><textarea id="mode_txt_detail_addr"></textarea></form>
+	                	</div>
+	                	<div class="addr_people" id="first_people">
+	                		<p>&nbsp;&nbsp;&nbsp;*收货人:</p>
+	                		<form><input type="text" value="" id="mode_guy"/></form>
+	                	</div>
+	                	<div class="addr_phone" id="first_phone">
+	                		<p>*手机号码:</p>
+	                		<form><input type="text" value="" id="mod_phone"/></form>
+	                	</div>
+	                	<div class="new_btn" id="new_btn">
+	                		<form><input type="button" value="确认修改" id="addr_id"/></form>
+	                	</div>
+	                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="com_goods">
+    	<div class="goods_info">
+    		<div class="th_info_title goods-info">商品信息</div>
+    		<div class="th_item">数量(件)</div>
+    		<div class="th_item">单价（元）</div>
+    		<div class="th_item">优惠（元）</div>
+    		<div class="th_item">小计（元）</div>
+    	</div>
+    	<div class="detail_goods">
+    		<div class="th_goods_info goods-info">
+    			<div class="goods_img"><img src="images/goods1.jpg" /></div>
+    			<div class="info_intro">中秋节礼品 大山合百菇园秋月款A菌菇礼盒干货大礼包土特产送礼</div>
+    		</div>
+    		<div class="tb_content goods_amount">1</div>
+    		<div class="tb_content">¥69</div>
+    		<div class="tb_content">
+    			<select>
+    				<option>省2元:满减优惠</option>
+    				<option>省2元:满减优惠</option>
+    			</select>
+    		</div>
+    		<div class="tb_content subtotal">¥69</div>
+    	</div>
+    	<div class="detail_goods">
+    		<div class="th_goods_info goods-info">
+    			<div class="goods_img"><img src="images/goods2.jpg" /></div>
+    			<div class="info_intro">中秋节礼品 大山合百菇园秋月款A菌菇礼盒干货大礼包土特产送礼</div>
+    		</div>
+    		<div class="tb_content goods_amount">1</div>
+    		<div class="tb_content">¥69</div>
+    		<div class="tb_content">
+    			<select>
+    				<option>省2元:满减优惠</option>
+    				<option>省2元:满减优惠</option>
+    			</select>
+    		</div>
+    		<div class="tb_content subtotal">¥69</div>
+    	</div>
+    	<div class="detail_goods">
+    		<div class="th_goods_info goods-info">
+    			<div class="goods_img"><img src="images/goods3.jpg" /></div>
+    			<div class="info_intro">中秋节礼品 大山合百菇园秋月款A菌菇礼盒干货大礼包土特产送礼</div>
+    		</div>
+    		<div class="tb_content goods_amount">1</div>
+    		<div class="tb_content">¥69</div>
+    		<div class="tb_content">
+    			<select>
+    				<option>省2元:满减优惠</option>
+    				<option>省2元:满减优惠</option>
+    			</select>
+    		</div>
+    		<div class="tb_content subtotal">¥69</div>
+    	</div>
+    	<div class="detail_goods">
+    		<div class="th_goods_info goods-info">
+    			<div class="goods_img"><img src="images/goods4.jpg" /></div>
+    			<div class="info_intro">中秋节礼品 大山合百菇园秋月款A菌菇礼盒干货大礼包土特产送礼</div>
+    		</div>
+    		<div class="tb_content goods_amount">1</div>
+    		<div class="tb_content">¥69</div>
+    		<div class="tb_content">
+    			<select>
+    				<option>省2元:满减优惠</option>
+    				<option>省2元:满减优惠</option>
+    			</select>
+    		</div>
+    		<div class="tb_content subtotal">¥69</div>
+    	</div>
+    	<div class="detail_goods">
+    		<div class="th_goods_info goods-info">
+    			<div class="goods_img"><img src="images/goods5.jpg" /></div>
+    			<div class="info_intro">中秋节礼品 大山合百菇园秋月款A菌菇礼盒干货大礼包土特产送礼</div>
+    		</div>
+    		<div class="tb_content goods_amount">1</div>
+    		<div class="tb_content">¥69</div>
+    		<div class="tb_content">
+    			<select>
+    				<option>省2元:满减优惠</option>
+    				<option>省2元:满减优惠</option>
+    			</select>
+    		</div>
+    		<div class="tb_content subtotal">¥69</div>
+    	</div>
+    </div>
+    <div class="sp_pay_wrap clearfix">
+      <div class="sp_pay">
+      	<div class="message_for_merchant">
+    	给商家留言:<input type="text" value="" placeholder="填写商品已和商家协商并确认"/>
+    	</div>
+        <div class="pay_con">
+            <p>实付款：<span class="act_pay" id="act_pay">¥0.00</span></p>
+            <p>寄送至：<b id="act_addr">XX省 XX市 XX区 XX市XX区XX路XX号XX座XXXX</b></p>
+        </div>
+        <div class="sp_button">
+        	<a class="pay_back" href="local_specialty_shoppingcart.html">返回购物车</a> 
+        	<a class="pay_order" href="local_specialty_online_payment.html">提交订单</a>
+        </div>
+      </div>
+    </div>
+</div>
+<!--底部-->
+<div class="friend_w clearfix">
+    <div class="friend clearfix">
+        <dl class="friend_dl bg01">
+            <dt><b>网站使用流程</b></dt>
+            <dd><a href="#">网站使用流程</a></dd>
+            <dd><a href="#">网站预定流程</a></dd>
+            <dd><a href="#">会员注册流程</a></dd> 
+            <dd><a href="#">网站支付流程</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg02">
+            <dt><b>会员中心</b></dt>
+            <dd>会员<a href="regist.html">注册</a>/<a href="index.html">登录</a></dd>
+            <dd><a href="#">帮助中心</a></dd>
+            <dd><a href="#">积分中心</a></dd>
+            <dd><a href="#">支付中心</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg03">
+            <dt><b>企业简介</b></dt>
+            <dd><a href="#">关于我们</a></dd> 
+            <dd><a href="#">加入我们</a></dd> 
+            <dd><a href="#">公司动态</a></dd>
+            <dd><a href="#">网站地图</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg04">
+            <dt><b>合作伙伴</b></dt>
+            <dd><a href="#">加盟合作</a></dd> 
+            <dd><a href="#">广告合作</a></dd> 
+            <dd><a href="#">运营合作</a></dd> 
+            <dd><a href="#">友情链接</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+        <dl class="friend_dl bg05">
+            <dt><b>旅游查询</b></dt>
+            <dd><a href="#">天气预报</a></dd>  
+            <dd><a href="#">火车查询</a></dd> 
+            <dd><a href="#">地图导航</a></dd>   
+            <dd><a href="#">航班时刻</a></dd>
+            <dd><a href="#">更多 →</a></dd>
+        </dl>
+    </div>
+</div>
+<div class="footer_w">
+    <div class="footer clearfix">
+        <div class="footer_c">
+            <p>地址：xx省xx市xx区xx路xx号 &nbsp;| &nbsp;服务热线：000-00000000 &nbsp; | &nbsp;传真：000-00000000  备案号：000-00000000</p>
+            <p>Copyright © 2018 畅游发展有限公司 All Rights Reserved.</p>
+        </div>
+        <div class="f_logo">
+        	<img src="images/b_logo.jpg">
+        </div>
+    </div>
+</div>
+</body>
+</html>
